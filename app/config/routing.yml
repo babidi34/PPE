@@ -1,0 +1,11 @@
+pages:
+    resource: "@PagesBundle/Resources/config/routing.yml"
+    prefix:   /
+
+neige_et_soleil:
+    resource: "@NeigeEtSoleilBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

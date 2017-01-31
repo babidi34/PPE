@@ -1,0 +1,4 @@
+services:
+#    neige_et_soleil.example:
+#        class: NeigeEtSoleilBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

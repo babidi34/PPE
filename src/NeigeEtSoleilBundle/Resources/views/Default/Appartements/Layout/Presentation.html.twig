@@ -1,0 +1,36 @@
+{% extends '::layout/layout.html.twig' %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+
+            {% include '::modulesUsed/navigation.html.twig' %}
+            <div class="span9">
+                <div class="row">
+                    <div class="span5">
+                        <img src="{{ asset('img/holder.png') }}" alt="DevAndClick" width="470" height="310">
+                    </div>
+
+                    <div class="span4">
+                        <h4>{{ appartement.nomImmeubleA }}</h4>
+                        <h5>{{ appartement.villeA }}, {{ appartement.cpA }}</h5>
+                        <p>Charmant appartement de {{ appartement.superficie }} m2 situe a {{ appartement.villeA }}. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat.</p>
+                        <h4>{{ appartement.prix }}€ /nuit</h4>
+                        <form action="panier.php">
+                            <div>
+                                <button class="btn btn-primary">Réserver !</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

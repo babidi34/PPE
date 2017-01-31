@@ -1,0 +1,9 @@
+Appartements:
+    path:     /
+    defaults: { _controller: NeigeEtSoleilBundle:Appartements:appartements }
+    
+Presentation:
+    path:     /appartements/{id}
+    defaults: { _controller: NeigeEtSoleilBundle:Appartements:presentation }
+    
+
